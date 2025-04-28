@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Challenge_3 {
+
+    Scanner input = new Scanner(System.in);
+
+    public void AgeChecker() {
+        int age;
+        System.out.println("How old are you?");
+        age = input.nextInt();  
+
+        if (age < 0) {
+            System.out.println("Can't be possible");
+        } else if (age < 18) {
+            System.out.println("You are too young");
+        } else {
+            System.out.println("You are old enough");
+        }
+    }
+
+    public static void main(String[] args) {
+        new Challenge_3().AgeChecker();  
+    }
+}
